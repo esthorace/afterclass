@@ -1,5 +1,10 @@
 {% extends 'curso/base.html' %}
 
 {% block contenido %}
+<main >
     <h1>Bienvenido</h1>
+    <a href="{% url 'curso:curso_list' %}"><button>Mostrar Cursos</button></a>
+    <a href="{% url 'curso:comision_list' %}"><button>Mostrar Comisiones</button></a>
+    <a href="{% url 'curso:alumno_list' %}"><button>Mostrar Alumnos</button></a>
+</main>
 {% endblock contenido %}
